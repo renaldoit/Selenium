@@ -1,5 +1,5 @@
 {
-    "testing" : [
+    "users" : [
         {
             "id": 1,
             "nama": "afif",
