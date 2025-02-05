@@ -1,0 +1,15 @@
+wait = WebDriverWait(driver, 10)  # Timeout in seconds
+
+# Wait for element to be present
+element = wait.until(EC.presence_of_element_located((By.ID, "elementId")))
+
+# Wait for element to be visible
+element = wait.until(EC.visibility_of_element_located((By.ID, "elementId")))
+
+# Wait for element to be clickable
+element = wait.until(EC.element_to_be_clickable((By.ID, "elementId")))
+
+# Other useful expected conditions:
+# EC.text_to_be_present_in_element((By.ID, "elementId"), "expected text")
+# EC.title_contains("expected title")
+# EC.url_contains("expected part of URL")
